@@ -3,5 +3,15 @@ author: Julie
 api: 5.0.0
 version: 1.0.0
 main: julie\juliehome\Main
-description: Julie Home plugin for PMMP by "juli3.php" (discord)
+description: Julie HomeCommande plugin for PMMP by "juli3.php" (discord)
 website: https://discord.gg/TqzSRdc5
+
+permissions:
+  home.cmd:
+    default: true
+  sethome.cmd:
+    default: true
+  delhome.cmd:
+    default: true
+  homelist.cmd:
+    default: true

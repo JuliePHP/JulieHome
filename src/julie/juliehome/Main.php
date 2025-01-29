@@ -2,10 +2,10 @@
 
 namespace julie\juliehome;
 
-use julie\juliehome\commande\DelHome;
-use julie\juliehome\commande\Home;
-use julie\juliehome\commande\HomeList;
-use julie\juliehome\commande\Sethome;
+use julie\juliehome\commande\DelHomeCommande;
+use julie\juliehome\commande\HomeCommande;
+use julie\juliehome\commande\HomeListCommande;
+use julie\juliehome\commande\SethomeCommande;
 use julie\juliehome\managers\HomeManager;
 use pocketmine\plugin\PluginBase;
 use pocketmine\Server;
@@ -26,10 +26,10 @@ class Main extends PluginBase
         $config = $this->getConfig();
         HomeManager::load();
         $this->getServer()->getCommandMap()->registerAll("", [
-            new Sethome("sethome", $config->get("sethome_descritpion"), "/sethome <name>", ["addhome <name>"]),
-            new DelHome("delhome", $config->get("delhome_descritpion"), "/delhome <name>", ["removehome <name>"]),
-            new Home("home", $config->get("home_descritpion"), "/home <name>"),
-            new HomeList("homelist", $config->get("homelist_descritpion"), "/homelist"),
+            new SethomeCommande("sethome", $config->get("sethome_descritpion"), "/sethome <name>", ["addhome <name>"]),
+            new DelHomeCommande("delhome", $config->get("delhome_descritpion"), "/delhome <name>", ["removehome <name>"]),
+            new HomeCommande("home", $config->get("home_descritpion"), "/home <name>"),
+            new HomeListCommande("homelist", $config->get("homelist_descritpion"), "/homelist", ["homes"]),
         ]);
     }
     protected function onDisable(): void

@@ -8,7 +8,7 @@ invalid_name: ["hitler", "list", "negre"]
 invalid_name_message: "§cLe nom est invalide"
 no_home: "Vous n'avez aucuns home"
 dont_find_home: "Ce home n'à pas été trouvé ! Faites /homelist pour voir la liste des home"
-
+no_perm: "Vous n'avez pas la permission"
 # Commandes:
 sethome_descritpion: "Definir un home"
 sethome_message: "Vous venez de poser votre home"

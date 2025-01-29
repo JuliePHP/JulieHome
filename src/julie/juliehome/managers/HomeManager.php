@@ -16,7 +16,6 @@ class HomeManager
 
     public static function unload(): void {
         try {
-            var_dump(self::$homeList);
             $serialize = serialize(self::$homeList);
             $config = Main::getInstance()->config("home");
             $config->set("e", $serialize);
