@@ -1,0 +1,36 @@
+# JulieHome
+Julie home for PMMP
+
+Commandes:
+
+- /sethome <name>
+- /delhome <name>
+- /home <name>
+- /homelist
+
+Config: 
+```yaml
+
+# Globals settings
+max_home: 5
+max_home_message: "§cVous avez atteint la limite de home (5 home)"
+usage_message: "§cUsage: {usage}"
+max_name_length: 10
+max_name_length_message: "§cLe nom du home ne doit pas dépassé 10 carractères"
+invalid_name: ["hitler", "list", "negre"]
+invalid_name_message: "§cLe nom est invalide"
+no_home: "Vous n'avez aucuns home"
+dont_find_home: "Ce home n'à pas été trouvé ! Faites /homelist pour voir la liste des home"
+
+# Commandes:
+sethome_descritpion: "Definir un home"
+sethome_message: "Vous venez de poser votre home"
+
+delhome_descritpion: "Retirer un home"
+delhome_message: "Vous venez de supprimé votre home"
+
+home_descritpion: "Se téléporter un un home"
+
+homelist_descritpion: "Obtenir la liste des homes"
+homelist_header: "Voici la liste des home: "
+```
