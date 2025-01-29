@@ -1,0 +1,7 @@
+name: JulieHome
+author: Julie
+api: 5.0.0
+version: 1.0.0
+main: julie\juliehome\Main
+description: Julie Home plugin for PMMP by "juli3.php" (discord)
+website: https://discord.gg/TqzSRdc5
